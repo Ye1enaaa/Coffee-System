@@ -57,6 +57,7 @@ class _FormPageState extends State<FormPage> {
             ElevatedButton(
               onPressed: (){
                 saveData();
+                Navigator.pop(context);
               }, child: const Text('SUBMIT'))
           ],
         ) 
