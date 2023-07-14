@@ -38,5 +38,8 @@ class DatabaseHelper {
     return await db.insert('customer', data);
   }
 
-  // Add other data operations like updating, deleting, querying here...
+  Future<List<Map<String, dynamic>>> fetchData() async{
+    Database db = await database;
+    return await db.query('customer');
+  }
 }
